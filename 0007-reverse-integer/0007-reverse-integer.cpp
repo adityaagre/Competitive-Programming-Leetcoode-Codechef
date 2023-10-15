@@ -1,3 +1,5 @@
+// V.imp..
+
 class Solution {
 public:
     int reverse(int x) {
@@ -12,3 +14,10 @@ public:
         return rev;
     }
 };
+
+/*
+
+Solution Link :
+https://leetcode.com/problems/reverse-integer/solution/
+
+*/
