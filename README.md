@@ -1,4 +1,4 @@
-Maintaining records of my best solved problems.
+Maintaining records of my solutions to problems I found most challenging.
 
 
 1. Duplet
