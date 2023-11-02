@@ -11,31 +11,40 @@
  */
 class Solution {
 public:
-    int count = 0;
+    int counter = 0;
     
-    pair<int, int> postOrder(TreeNode* root) {
-        if (root == NULL) {
-            return {0, 0};
-        }
+    int averageOfSubtree(TreeNode* root) 
+    {
         
-        // First iterate over left and right subtrees.
-        pair<int, int> left = postOrder(root->left);
-        pair<int, int> right = postOrder(root->right);
+        rec_traverse(root);
+        return counter;
         
-        int nodeSum = left.first + right.first + root->val;
-        int nodeCount = left.second + right.second + 1;
-
-        // Check if the average of the subtree is equal to the node value.
-        if (root->val == nodeSum / (nodeCount)) {
-            count++;
-        }
-        
-        // Return the sum of nodes and the count in the subtree.
-        return {nodeSum, nodeCount};
     }
     
-    int averageOfSubtree(TreeNode* root) {
-        postOrder(root);
-        return count;
+    pair<int,int> rec_traverse(TreeNode* root)
+    {
+        if(root == NULL)
+        {
+            return {0,0};
+        }
+        
+        else
+        {
+            pair<int,int> left;
+            pair<int, int> right;
+            
+            left = rec_traverse(root->left);
+            right = rec_traverse(root->right);
+            
+            int sum_of_subtree = root->val + left.first + right.first;
+            int count = 1 + left.second + right.second;
+            
+            if(root -> val == sum_of_subtree/count)
+            {
+                counter++;
+            }
+            
+            return{sum_of_subtree, count};
+        }
     }
 };
