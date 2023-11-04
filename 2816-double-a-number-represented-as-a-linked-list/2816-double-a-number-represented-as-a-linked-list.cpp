@@ -13,6 +13,9 @@ public:
     //stack<int> digits;
     ListNode* doubleIt(ListNode* head) 
     {
+        // this is making. new extra node with digit zero in the beginning 
+        // because twice a 3 digit number may be a four digit number
+        // this is can and must happen when leading digit >= 5
         if(head->val >= 5)
         {
             ListNode* new_node;
