@@ -1,0 +1,181 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fmodern\fcharset0 CourierNewPSMT;
+\f3\fmodern\fcharset0 CourierNewPS-BoldMT;\f4\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue255;\red0\green0\blue109;
+\red101\green76\blue29;\red157\green0\blue210;\red19\green118\blue70;\red246\green246\blue239;\red29\green30\blue26;
+\red88\green209\blue235;\red244\green0\blue95;\red224\green213\blue97;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c100000;\cssrgb\c0\c6275\c50196;
+\cssrgb\c47451\c36863\c14902;\cssrgb\c68627\c0\c85882;\cssrgb\c3529\c52549\c34510;\cssrgb\c97255\c97255\c94902;\cssrgb\c15294\c15686\c13333;
+\cssrgb\c40000\c85098\c93725;\cssrgb\c97647\c14902\c44706;\cssrgb\c90196\c85882\c45490;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 11/10/23\
+Complexity of count method for vector is O(n).
+\f1\fs26 \cb2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Sorting a vector:\
+sort(v.begin(), v.end())
+\f0\fs24 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+If you have a sorted array, you can remove duplicates in O(n) time. (Single traversal)\
+\
+If you have an unsorted one, still it is  O(n).\
+Use a Hashmap. <key, freq>.\
+\
+Unordered map syntax:\
+Unordered_map<int,int> mname\
+\
+Unordered map syntax:\
+This is how you can use it to find frequencies of elements in O(n)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs26 \cf0 \cb2 \expnd0\expndtw0\kerning0
+ 
+\f0\fs24 \cb1 \kerning1\expnd0\expndtw0 \
+
+\f1\fs26 \cb2 \expnd0\expndtw0\kerning0
+unordered_map <\cf3 int\cf0 ,\cf3 int\cf0 > m1;\cb1 \
+\
+\cb2         \cf3 int\cf0  s3= \cf4 ans\cf0 .\cf5 size\cf0 ();\cb1 \
+\
+\cb2         \cf6 for\cf0  (\cf3 int\cf0  i = \cf7 0\cf0 ; i<s3; i++)\cb1 \
+\cb2         \{\cb1 \
+\cb2             \cf6 if\cf0 (\cf4 m1\cf0 .\cf5 find\cf0 (\cf4 ans\cf0 [i]) == \cf4 m1\cf0 .\cf5 end\cf0 ())\cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 m1\cf0 .\cf5 insert\cf0 (\cf5 make_pair\cf0 (\cf4 ans\cf0 [i], \cf7 1\cf0 ));\cb1 \
+\cb2             \}\cb1 \
+\
+\cb2             \cf6 else\cf0 \cb1 \
+\cb2             \{\cb1 \
+\cb2                 \cf4 m1\cf0 [\cf4 ans\cf0 [i]]++;\cb1 \
+\cb2             \}\cb1 \
+\cb2         \}\cb1 \
+\
+\cb2         vector<\cf3 int\cf0 > ans2;\cb1 \
+\
+\cb2         \cf6 for\cf0  (\cf3 auto\cf0 & it : m1) \cb1 \
+\cb2         \{\cb1 \
+\cb2             \cf4 ans2\cf0 .\cf5 push_back\cf0 (\cf4 it\cf0 .\cf4 first\cf0 );\cb1 \
+\cb2             \cb1 \
+\cb2         \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+Note: it.first = key\
+It.second = value\
+\
+Unordered set \
+\
+\
+\
+Finding intersection of two arrays: O(n)\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Finding max element of a vector\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf8 \cb9 \expnd0\expndtw0\kerning0
+*max_element(a.begin(), a.end());\
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf8 \cb9 stack<
+\f3\b \AppleTypeServices\AppleTypeServicesF65539 \cf10 int
+\f2\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf8 > stack;
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\cf8 stack.push(21);
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf11 while
+\f2\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf2  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf8 (!stack.empty()) \{
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 cout << stack.top() <<\cf12 " "\cf8 ;
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 stack.pop();
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\cf8 \}
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \AppleTypeServices \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+INT_MAX gives maximum integer that can be stored in integer variable.\
+\
+
+\f1\fs26 \cf4 \cb2 \expnd0\expndtw0\kerning0
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf4 /Users/adityaagre/flutter/examples/hello_world/macos/Flutter/Flutter-Debug.xcconfig\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+/Users/adityaagre/Downloads/nature_network 2/ios/Flutter/AppFrameworkInfo.plist\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\f4\b Pair
+\f0\b0 \
+You can return 2 variables in cpp\
+  pair<int, int> postOrder(TreeNode* root) \{\
+        if (root == NULL) \{\
+            return \{0, 0\};\
+        \}\
+\
+Accessing elements of pair:\
+P1.first an p1.second\
+\
+Pair can also be made like:\
+return \{0,0\}
+\f4\b \
+\
+Problem: https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/\
+
+\f0\b0 \
+\
+\
+Cpp :
+\f4\b  NULL
+\f0\b0 \
+\
+Creating a new node:\
+ListNode* new_node;\
+            new_node = new ListNode(dig);\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs26 \cf0 \cb2 \expnd0\expndtw0\kerning0
+\
+For returning mod answers\
+const unsigned int base = 1000000007;\
+Long long Temp = // Function result\
+Ans += (ans + temp) % base\
+\
+\
+\
+\
+\
+\
+}
