@@ -8,3 +8,4 @@ Maintaining records of my solutions to problems I found most challenging.
 5. Double number: recursion, linked list,  handling long int in int. This is similar to last problem but better, also, we have implemented this without using stack.
 6. max_index_diff really good array problem.
 7. sorted_rotated array: array rotation.
+8. MD_Riev: prime numbers and palindromes. interesting property.
