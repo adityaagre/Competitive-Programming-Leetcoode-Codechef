@@ -9,4 +9,6 @@ Maintaining records of my solutions to problems I found most challenging.
 6. max_index_diff really good array problem.
 7. sorted_rotated array: array rotation.
 8. MD_Riev: prime numbers and palindromes. interesting property.
-9. Simple palindrome question, but interesting point regarding nagative palindromes' existence.
+9. 0009-palindrome-number: Simple palindrome question, but interesting point regarding nagative palindromes' existence.
+
+1. 3_sum_closest. 
