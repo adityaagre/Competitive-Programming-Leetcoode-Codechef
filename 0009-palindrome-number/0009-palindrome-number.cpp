@@ -30,6 +30,8 @@ public:
                 
             }
             
+            // Note: no negative number is considered a palindrome, atleast yaha to aisa diya hai. to note that 121 is a palindrome, but -121 is not. 
+            
             return(ulta == seedha);
         }
         
