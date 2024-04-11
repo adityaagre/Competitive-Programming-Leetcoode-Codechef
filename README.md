@@ -12,3 +12,5 @@ Maintaining records of my solutions to problems I found most challenging.
 9. 0009-palindrome-number: Simple palindrome question, but interesting point regarding nagative palindromes' existence.
 
 1. 3_sum_closest. 
+2. subset_1 : Basic regression
+3. 
