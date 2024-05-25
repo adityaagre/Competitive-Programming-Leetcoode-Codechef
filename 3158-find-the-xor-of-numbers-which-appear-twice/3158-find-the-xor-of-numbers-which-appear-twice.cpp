@@ -11,11 +11,14 @@ public:
         {
             if(freq.find(nums[i]) == freq.end())
             {
+                // If that number os not present previously, add that number to the hashmap.
                 freq.insert({nums[i], 1});
             }
             
             else
             {
+                // If that number was present previously, add it to the doubles vector.
+                // Note:, this is based on the fact that no number can appear thrice according to given question.
                 doubles.push_back(nums[i]);
             }
         }
@@ -40,7 +43,7 @@ public:
             
             for(int i =1; i<l2; i++)
             {
-                ans =  ans ^ doubles[i];
+                ans =  ans ^ doubles[i];  // This is the symbol for XOR. x^y 
             }
             
             return ans;
