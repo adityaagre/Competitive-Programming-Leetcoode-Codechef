@@ -18,4 +18,15 @@ Maintaining records of my solutions to problems I found most challenging.
 
 Coding concepts for future quick reference:
 
-1. #Sorting a nested vector based on one of its terms#
+# 1. Sorting a nested vector based on one of its terms. #
+
+## 1. Sorting a nested vector based on one of its terms. ##
+Vector : [[5,7], [1,3], [8,9]]
+To sort this vector based on the the first terms inside their internal vectors. 
+Sorted Vector : [1,3], [5,7], [8,9]]
+Code :
+//let the vector be:
+vector<vector<int>> v
+sort(v.begin(), v.end(), [](const vector<int>& a, const vector<int>& b) {return a[0] < b[0];});
+
+Used this in question : 3169-count-days-without-meetings 
