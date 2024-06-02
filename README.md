@@ -14,3 +14,8 @@ Maintaining records of my solutions to problems I found most challenging.
 1. 3_sum_closest. 
 2. subset_1 : Basic regression
 3. 
+
+
+Coding concepts for future quick reference:
+
+1. #Sorting a nested vector based on one of its terms#
