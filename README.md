@@ -20,7 +20,7 @@ Maintaining records of my solutions to problems I found most challenging.
 
 ### 1. Sorting a nested vector based on one of its terms. ###
 
-# 1. Sorting a nested vector based on one of its terms. #
+## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
 To sort this vector based on the the first terms inside their internal vectors. 
 Sorted Vector : [1,3], [5,7], [8,9]]
@@ -31,7 +31,7 @@ sort(v.begin(), v.end(), [](const vector<int>& a, const vector<int>& b) {return 
 
 Used this in question : 3169-count-days-without-meetings 
 
-# 2. Difference in assigning one vector to another in cpp and assigning a list to another in python.#
+## 2. Difference in assigning one vector to another in cpp and assigning a list to another in python. ##
 In python: 
 l1 = [1,2]
 l2=l1
