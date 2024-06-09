@@ -17,8 +17,8 @@ Maintaining records of my solutions to problems I found most challenging.
 
 
 # Coding concepts for future quick reference: #
-
-### 1. Sorting a nested vector based on one of its terms. ###
+1. Sorting a nested vector based on one of its terms.
+2. Difference in assigning one vector to another in cpp and assigning a list to another in python.
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -43,6 +43,40 @@ print(l2)
 [-33, 2]
 
 listOne is pointing to the contents of the list. Then listTwo = listOne will just create another pointer (listTwo) to that same list. So when you do anything to either pointer, e.g. listTwo.append(4), you will affect the list that both listOne and listTwo are pointing to.
+
+In CPP:
+ // Initializing vector with values  
+    vector<int> vect1{100, 100, 100}; 
+    // Declaring new vector  
+    vector<int> vect2;  
+    // Making new copy.
+    vect2 = vect1;
+    vect1[0] = 0;
+    cout<<vect1[0]<<endl<<vect2[0]<<endl;
+    
+0
+100
+
+Here, in CPP, change in vector1 did not reflect in vector 2. Therefore assigning vector 1 to vector creates a copy.
+
+## 3. Making a copy of a list in python ##
+There are two ways:
+  1. .copy()
+  2. list()
+
+1. .copy() Method:
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+thislist[0] = "changed"
+print(thislist, mylist, sep="\n")
+
+['changed', 'banana', 'cherry']
+['apple', 'banana', 'cherry']
+
+
+2. list() METHOD :
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
 
 
 
