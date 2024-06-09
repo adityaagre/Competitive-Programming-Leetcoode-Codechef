@@ -19,7 +19,8 @@ Maintaining records of my solutions to problems I found most challenging.
 # Coding concepts for future quick reference: #
 1. Sorting a nested vector based on one of its terms.
 2. Difference in assigning one vector to another in cpp and assigning a list to another in python.
-3. Making copy of a list in python
+3. Making copy of a list in python.
+4. Shallow and deep copy operations in python.
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -84,7 +85,50 @@ There are these ways:
    thislist = ["apple", "banana", "cherry"]
    mylist = thislist[:]
 
-4. 
+## 4. Shallow and deep copy operations in python. ##
+https://docs.python.org/3.6/library/copy.html
+
+Assignment statements in Python do not copy objects, they create bindings between a target and an object. For collections that are mutable or contain mutable items, a copy is sometimes needed so one can change one copy without changing the other. This module provides generic shallow and deep copy operations (explained below).
+
+copy.copy(x)
+Return a shallow copy of x.
+copy.deepcopy(x[, memo])
+Return a deep copy of x.
+
+exception copy.error
+Raised for module specific errors.
+
+If you're not familiar with the difference between Shallow and Deep Copy, read these docs. Basically, a Shallow Copy is a new outer container object (the [ ] and the internal elements are references to the same memory locations. A Deep Copy is also a new outer container but gets brand new copies of the objects inside (i.e. identical copies of the objects but at new memory locations).
+The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like lists or class instances):
+
+A shallow copy constructs a new compound object and then (to the extent possible) inserts references into it to the objects found in the original.
+
+A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.
+
+### Simple Language ###
+If list 1 has class objects. if you make a copy() of list1, it will create a new outer container for the new list. but for all the elements inside list 2, there will be pointers to the same class objects as in list1.
+Therefore use deepcopy()
+This difference wont be evident for a list of int, etc.
+
+Two problems often exist with deep copy operations that don’t exist with shallow copy operations:
+
+Recursive objects (compound objects that, directly or indirectly, contain a reference to themselves) may cause a recursive loop.
+
+Because deep copy copies everything it may copy too much, such as data which is intended to be shared between copies.
+
+The deepcopy() function avoids these problems by:
+
+keeping a memo dictionary of objects already copied during the current copying pass; and
+
+letting user-defined classes override the copying operation or the set of components copied.
+
+This module does not copy types like module, method, stack trace, stack frame, file, socket, window, array, or any similar types. It does “copy” functions and classes (shallow and deeply), by returning the original object unchanged; this is compatible with the way these are treated by the pickle module.
+
+Shallow copies of dictionaries can be made using dict.copy(), and of lists by assigning a slice of the entire list, for example, copied_list = original_list[:].
+
+Classes can use the same interfaces to control copying that they use to control pickling. See the description of module pickle for information on these methods. In fact, the copy module uses the registered pickle functions from the copyreg module.
+
+In order for a class to define its own copy implementation, it can define special methods __copy__() and __deepcopy__(). The former is called to implement the shallow copy operation; no additional arguments are passed. The latter is called to implement the deep copy operation; it is passed one argument, the memo dictionary. If the __deepcopy__() implementation needs to make a deep copy of a component, it should call the deepcopy() function with the component as first argument and the memo dictionary as second argument.
 
 
 
