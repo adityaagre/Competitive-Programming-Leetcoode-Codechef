@@ -20,10 +20,6 @@ Maintaining records of my solutions to problems I found most challenging.
 
 ### 1. Sorting a nested vector based on one of its terms. ###
 
-
-
-
-
 # 1. Sorting a nested vector based on one of its terms. #
 Vector : [[5,7], [1,3], [8,9]]
 To sort this vector based on the the first terms inside their internal vectors. 
@@ -34,3 +30,19 @@ vector<vector<int>> v
 sort(v.begin(), v.end(), [](const vector<int>& a, const vector<int>& b) {return a[0] < b[0];});
 
 Used this in question : 3169-count-days-without-meetings 
+
+# 2. Difference in assigning one vector to another in cpp and assigning a list to another in python.#
+In python: 
+l1 = [1,2]
+l2=l1
+l1[0] = -33
+print(l1)
+print(l2)
+
+[-33, 2]
+[-33, 2]
+
+listOne is pointing to the contents of the list. Then listTwo = listOne will just create another pointer (listTwo) to that same list. So when you do anything to either pointer, e.g. listTwo.append(4), you will affect the list that both listOne and listTwo are pointing to.
+
+
+
