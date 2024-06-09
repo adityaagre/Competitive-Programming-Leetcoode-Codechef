@@ -19,6 +19,7 @@ Maintaining records of my solutions to problems I found most challenging.
 # Coding concepts for future quick reference: #
 1. Sorting a nested vector based on one of its terms.
 2. Difference in assigning one vector to another in cpp and assigning a list to another in python.
+3. Making copy of a list in python
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -60,23 +61,31 @@ In CPP:
 Here, in CPP, change in vector1 did not reflect in vector 2. Therefore assigning vector 1 to vector creates a copy.
 
 ## 3. Making a copy of a list in python ##
-There are two ways:
+There are these ways:
   1. .copy()
   2. list()
+  3. slicing
 
 1. .copy() Method:
-thislist = ["apple", "banana", "cherry"]
-mylist = thislist.copy()
-thislist[0] = "changed"
-print(thislist, mylist, sep="\n")
+ thislist = ["apple", "banana", "cherry"]
+ mylist = thislist.copy()
+ thislist[0] = "changed"
+ print(thislist, mylist, sep="\n")
 
-['changed', 'banana', 'cherry']
-['apple', 'banana', 'cherry']
+ ['changed', 'banana', 'cherry']
+ ['apple', 'banana', 'cherry']
 
 
 2. list() METHOD :
-thislist = ["apple", "banana", "cherry"]
-mylist = list(thislist)
+ thislist = ["apple", "banana", "cherry"]
+ mylist = list(thislist)
+
+3. Slicing method:
+   thislist = ["apple", "banana", "cherry"]
+   mylist = thislist[:]
+
+4. 
+
 
 
 
