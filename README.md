@@ -22,7 +22,7 @@ Maintaining records of my solutions to problems I found most challenging.
 3. Making copy of a list in python.
 4. Shallow and deep copy operations in python.
 5. Mod Modulous of negative number. Cpp Vs Python
-6. 
+6. Subarray 
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -139,5 +139,6 @@ the number just smaller than -16 that is a negative multiple of 6 is -18.
 Therefore, -16%6 = -16 - (-18) = 2.
 Or, the remainder 2 can also always be written as -4.
 
-
+## 6. Subarray ##
+A subarray is a continuous part of an array.
 
