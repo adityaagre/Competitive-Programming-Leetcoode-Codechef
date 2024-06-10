@@ -21,6 +21,7 @@ Maintaining records of my solutions to problems I found most challenging.
 2. Difference in assigning one vector to another in cpp and assigning a list to another in python.
 3. Making copy of a list in python.
 4. Shallow and deep copy operations in python.
+5. Mod Modulous of negative number. 
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -130,6 +131,10 @@ Classes can use the same interfaces to control copying that they use to control 
 
 In order for a class to define its own copy implementation, it can define special methods __copy__() and __deepcopy__(). The former is called to implement the shallow copy operation; no additional arguments are passed. The latter is called to implement the deep copy operation; it is passed one argument, the memo dictionary. If the __deepcopy__() implementation needs to make a deep copy of a component, it should call the deepcopy() function with the component as first argument and the memo dictionary as second argument.
 
-
+## 5. Mod Modulous of negative number. ##
+11%6 = 5.
+-16%6 = ?
+the number just smaller than -16 that is a negative multiple of 6 is -18.
+Therefore, -16%6 = -16 - (-18) = 2.
 
 
