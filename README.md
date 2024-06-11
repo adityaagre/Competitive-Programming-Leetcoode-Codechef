@@ -142,3 +142,7 @@ Or, the remainder 2 can also always be written as -4.
 ## 6. Subarray ##
 A subarray is a continuous part of an array.
 
+## 7. Sum of subarrays and their divisibility. Very tough problem.
+0974-subarray-sums-divisible-by-k. This is the problem.
+
+
