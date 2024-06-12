@@ -22,7 +22,9 @@ Maintaining records of my solutions to problems I found most challenging.
 3. Making copy of a list in python.
 4. Shallow and deep copy operations in python.
 5. Mod Modulous of negative number. Cpp Vs Python
-6. Subarray 
+6. Subarray
+7. Sum of subarrays and their divisibility. Number of subarrays with this sum or this divisibility, etc.
+8. Iterating over dictionary in Python
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -149,6 +151,20 @@ Problems solved on this concept:
 
 To Solve:
 https://leetcode.com/problems/make-sum-divisible-by-p/
+
+## 8. Iterating over dictionary in Python
+You can iterate over dictionaries in python, like so:
+def put_in_lettered_digits(str1):
+    # Define a dictionary mapping digits to their lettered form
+    digit_to_word = {
+        '0': 'zero',
+        '1': 'one',
+    }
+
+    for digit, word in digit_to_word.items():
+        str1 = str1.replace(digit, word)
+    
+    return str1
 
 
 
