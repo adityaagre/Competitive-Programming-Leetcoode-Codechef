@@ -142,7 +142,13 @@ Or, the remainder 2 can also always be written as -4.
 ## 6. Subarray ##
 A subarray is a continuous part of an array.
 
-## 7. Sum of subarrays and their divisibility. Very tough problem.
-0974-subarray-sums-divisible-by-k. This is the problem.
+## 7. Sum of subarrays and their divisibility. Number of subarrays with this sum or this divisibility, etc..
+Problems solved on this concept:
+0974-subarray-sums-divisible-by-k. Solution link:https://www.youtube.com/watch?v=10wbS3uk2F8
+0560-subarray-sum-equals-k. 
+
+To Solve:
+https://leetcode.com/problems/make-sum-divisible-by-p/
+
 
 
