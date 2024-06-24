@@ -171,11 +171,7 @@ def put_in_lettered_digits(str1):
 When deciding what function to use at run time, instead of if, elif, elif, else, use dictionary function calling. Works even with parameters.
 
 Eg: 
-#Python3 code to demonstrate working of 
-#Functions as dictionary values
-#Using With params 
 
-#call Gfg fnc 
 def sum_key(a, b):
 	return a + b
 
