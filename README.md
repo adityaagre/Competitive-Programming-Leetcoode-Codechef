@@ -218,6 +218,9 @@ Remeber :
   Now integer less than 2.2 = 2.
   Therefore 2 numbers in 1-5 are squares.
   {1,4}.
+
+  Solve 0319-Bulb-Switcher with this.
+  
   
   
 
