@@ -28,6 +28,7 @@ Maintaining records of my solutions to problems I found most challenging.
 9. Python – Store Function as dictionary value
 10. Flippling bits.
 11. Odd or Even Number of factors of a number.
+12. Number of perfect squares till n 
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -207,6 +208,17 @@ Note: In many Questions, we need to find if number of factors of a given number 
 Remeber : 
 #### Squares have odd number of factors while non squres have an odd number of factors.
 
+## 12. Number of perfect squares till n 
 
+\t\t Sqrt(n)
+  All numbers have squares. We need to know the highest number which has its square less than n. 
+  sqrt(n) has its square equal to n. 
+  If n = 5
+  sqrt(n) = 2.2
+  Now integer less than 2.2 = 2.
+  Therefore 2 numbers in 1-5 are squares.
+  {1,4}.
+  
+  
 
 
