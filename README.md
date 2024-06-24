@@ -26,6 +26,7 @@ Maintaining records of my solutions to problems I found most challenging.
 7. Sum of subarrays and their divisibility. Number of subarrays with this sum or this divisibility, etc.
 8. Iterating over dictionary in Python
 9. Python – Store Function as dictionary value
+10. Flippling bits.
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -188,6 +189,16 @@ res = test_dict['Gfg'](10, 34)
 
 #printing result 
 print("The required call result : " + str(res))
+```
+
+## 10. Flippling bits.
+The most efficient way to change 1 to 0 and 0 to 1 is :
+let the bit be x.
+```
+x=x^1
+## ^ XOR
+## 0 XOR 1 -> 1
+## 1 XOR 1 -> 0
 ```
 
 
