@@ -25,6 +25,7 @@ Maintaining records of my solutions to problems I found most challenging.
 6. Subarray
 7. Sum of subarrays and their divisibility. Number of subarrays with this sum or this divisibility, etc.
 8. Iterating over dictionary in Python
+9. Python – Store Function as dictionary value
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -165,6 +166,32 @@ def put_in_lettered_digits(str1):
         str1 = str1.replace(digit, word)
     
     return str1
+
+## 9. Python – Store Function as dictionary value
+When deciding what function to use at run time, instead of if, elif, elif, else, use dictionary function calling. Works even with parameters.
+
+Eg: 
+#Python3 code to demonstrate working of 
+#Functions as dictionary values
+#Using With params 
+
+#call Gfg fnc 
+def sum_key(a, b):
+	return a + b
+
+#initializing dictionary
+#check for function name as key
+test_dict = {"Gfg": sum_key, "is" : 5, "best" : 9}
+
+#printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+
+#calling function using brackets 
+#params inside brackets
+res = test_dict['Gfg'](10, 34)
+
+#printing result 
+print("The required call result : " + str(res)) 
 
 
 
