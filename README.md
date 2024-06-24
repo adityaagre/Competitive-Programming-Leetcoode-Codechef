@@ -27,6 +27,7 @@ Maintaining records of my solutions to problems I found most challenging.
 8. Iterating over dictionary in Python
 9. Python – Store Function as dictionary value
 10. Flippling bits.
+11. Number of factors of a number.
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -200,6 +201,12 @@ x=x^1
 ## 0 XOR 1 -> 1
 ## 1 XOR 1 -> 0
 ```
+
+## 11. Number of factors of a number.
+Note: In many Questions, we need to find if number of factors of a given number is odd or even.
+Remeber : 
+##### Squares have odd number of factors while non squres have an odd number of factors.
+
 
 
 
