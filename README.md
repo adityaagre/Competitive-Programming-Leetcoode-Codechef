@@ -205,7 +205,7 @@ x=x^1
 ## 11. Number of factors of a number.
 Note: In many Questions, we need to find if number of factors of a given number is odd or even.
 Remeber : 
-##### Squares have odd number of factors while non squres have an odd number of factors.
+#### Squares have odd number of factors while non squres have an odd number of factors.
 
 
 
