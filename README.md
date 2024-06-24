@@ -28,7 +28,8 @@ Maintaining records of my solutions to problems I found most challenging.
 9. Python – Store Function as dictionary value
 10. Flippling bits.
 11. Odd or Even Number of factors of a number.
-12. Number of perfect squares till n 
+12. Number of perfect squares till n
+13. K consecutive bit flips.
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -220,6 +221,13 @@ Remeber :
   {1,4}.
 
   Solve 0319-Bulb-Switcher with this.
+
+## 13. K consecutive bit flips.
+
+Two very good problems based on flipping k consecutive bits in a [0, 1, 0, 1 ....] array to make all 1s.
+
+First solve medium level : 3191. Minimum Operations to Make Binary Array Elements Equal to One I
+Then solve hard : 995. Minimum Number of K Consecutive Bit Flips
   
   
   
