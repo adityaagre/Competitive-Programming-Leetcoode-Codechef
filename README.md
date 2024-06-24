@@ -210,7 +210,7 @@ Remeber :
 
 ## 12. Number of perfect squares till n 
 
-\t\t Sqrt(n)
+#### 				Sqrt(n)
   All numbers have squares. We need to know the highest number which has its square less than n. 
   sqrt(n) has its square equal to n. 
   If n = 5
