@@ -171,7 +171,7 @@ def put_in_lettered_digits(str1):
 When deciding what function to use at run time, instead of if, elif, elif, else, use dictionary function calling. Works even with parameters.
 
 Eg: 
-
+```
 def sum_key(a, b):
 	return a + b
 
@@ -187,7 +187,8 @@ print("The original dictionary is : " + str(test_dict))
 res = test_dict['Gfg'](10, 34)
 
 #printing result 
-print("The required call result : " + str(res)) 
+print("The required call result : " + str(res))
+```
 
 
 
