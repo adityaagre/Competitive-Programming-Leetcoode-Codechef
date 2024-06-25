@@ -30,6 +30,7 @@ Maintaining records of my solutions to problems I found most challenging.
 11. Odd or Even Number of factors of a number.
 12. Number of perfect squares till n
 13. K consecutive bit flips.
+14. Rotate an array or matrix by k when k greater than n.
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -228,6 +229,21 @@ Two very good problems based on flipping k consecutive bits in a [0, 1, 0, 1 ...
 
 First solve medium level : 3191. Minimum Operations to Make Binary Array Elements Equal to One I
 Then solve hard : 995. Minimum Number of K Consecutive Bit Flips
+
+## 14. Rotate an array or matrix by k when k greater than n.
+
+When you need to rotate an n number array to the left by k:
+n=5
+k=2
+ans = []
+k=k%n
+for (i r(k, n)):
+	ans.app(a[i][j])
+for( i r(0, k)):
+	ans.app(a[i][j])
+ ret ans
+
+ #### In cases where k > n, do a k=k%n in the beginning. 
   
   
   
