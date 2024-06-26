@@ -241,9 +241,7 @@ for( i r(0, k)):
     float f = (float) a / (float) b;
     float f1 = floor(f);
     float f2 = ceil(f);
-    
-    std::cout<<c<<endl<<d<<endl<<f<<endl<<f1<<endl<<f2<<endl;
-    
+    cout<<c<<endl<<d<<endl<<f<<endl<<f1<<endl<<f2<<endl;
     int original = (a/b)*b + a%b;
     cout<<"Original: "<<original;
 
