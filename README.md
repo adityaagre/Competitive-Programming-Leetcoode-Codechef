@@ -31,6 +31,7 @@ Maintaining records of my solutions to problems I found most challenging.
 12. Number of perfect squares till n
 13. K consecutive bit flips.
 14. Rotate an array or matrix by k when k greater than n.
+15. Integer division and float division in cpp:
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -244,6 +245,33 @@ for( i r(0, k)):
  ret ans
 
  #### In cases where k > n, do a k=k%n in the beginning. 
+
+## 15. Integer division and float division in cpp:
+
+ int main()
+{
+    int a = 12;
+    int b = 5;
+    float c = a/b;
+    float d = a/b;
+    float f = (float) a / (float) b;
+    float f1 = floor(f);
+    float f2 = ceil(f);
+    
+    std::cout<<c<<endl<<d<<endl<<f<<endl<<f1<<endl<<f2<<endl;
+    
+    int original = (a/b)*b + a%b;
+    cout<<"Original: "<<original;
+
+    return 0;
+}
+
+float c = a/b   -> 2
+float d = a/b   -> 2
+float f = (float) a / (float) b     -> 2.4
+float f1 = floor(f)     -> 2
+float f1 = floor(f)     -> 3
+Original: 12
   
   
   
