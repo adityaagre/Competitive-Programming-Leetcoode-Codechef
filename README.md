@@ -15,6 +15,7 @@
 13. K consecutive bit flips.
 14. Rotate an array or matrix by k when k greater than n.
 15. Integer division and float division in cpp:
+16. Smallest prime divisor of a number.
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -255,6 +256,26 @@ float f1 = floor(f)     -> 2
 float f1 = floor(f)     -> 3
 Original: 12
 
+```
+
+## 16. Smallest prime divisor of a number.
+
+```
+int smallestDivisor(int n)
+{
+    // if divisible by 2
+    if (n % 2 == 0)
+        return 2;
+ 
+    // iterate from 3 to sqrt(n)
+    for (int i = 3; i * i <= n; i += 2)
+	{
+        	if (n % i == 0)
+            		return i;
+    	}
+ 
+    return n;
+}
 ```
 
 
