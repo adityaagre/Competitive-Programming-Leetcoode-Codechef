@@ -231,6 +231,7 @@ for( i r(0, k)):
 
 ## 15. Integer division and float division in cpp:
 
+'''
  int main()
 {
     int a = 12;
@@ -255,6 +256,8 @@ float f = (float) a / (float) b     -> 2.4
 float f1 = floor(f)     -> 2
 float f1 = floor(f)     -> 3
 Original: 12
+
+'''
 
 
 
