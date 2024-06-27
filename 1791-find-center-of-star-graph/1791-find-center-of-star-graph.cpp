@@ -8,16 +8,16 @@ public:
         
         // int a = e1[0];
         // int b = e1[1];
-        int c = e2[0];
-        int d = e2[1];
+        // int c = e2[0];
+        // int d = e2[1];
         
-        if(count(edges[0].begin(), edges[0].end(), c))
+        if(count(edges[0].begin(), edges[0].end(), e2[0]))
         {
-            return c;
+            return e2[0];
         }
         else
         {
-            return d;
+            return e2[1];
         }
         return -1;
     }
