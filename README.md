@@ -290,6 +290,7 @@ unordered_map<int, long long> frequencyMap;
             frequencyMap[roads[i][1]]++;
         }
 ```
+To practice both the 17th and 18th point, solve : 2285. Maximum Total Importance of Roads
 
 ## 18. Sorting based on a member of an object.
 
