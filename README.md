@@ -16,6 +16,8 @@
 14. Rotate an array or matrix by k when k greater than n.
 15. Integer division and float division in cpp:
 16. Smallest prime divisor of a number.
+17. Frequency Counting
+18. Sorting based on a member of an object.
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -277,6 +279,30 @@ int smallestDivisor(int n)
     return n;
 }
 ```
+
+## 17. Frequency Counting
+
+```
+unordered_map<int, long long> frequencyMap;
+        for(int i = 0; i<roads.size(); i++)
+        {
+            frequencyMap[roads[i][0]]++;
+            frequencyMap[roads[i][1]]++;
+        }
+```
+
+## 18. Sorting based on a member of an object.
+
+Just like vector sorting, we sort a vector of objects. just that you need a trird parameter after the begin and end.
+[](const city &a, const city &b) {return a.degree > b.degree ;}
+```
+sort(
+            city_list.begin(), 
+            city_list.end(), 
+            [](const city &a, const city &b) {return a.degree > b.degree ;}
+);
+```
+
 
 
 
