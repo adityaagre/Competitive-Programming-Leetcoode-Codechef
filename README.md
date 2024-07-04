@@ -18,6 +18,7 @@
 16. Smallest prime divisor of a number.
 17. Frequency Counting
 18. Sorting based on a member of an object.
+19. Substring in cpp
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -302,6 +303,17 @@ sort(
             city_list.end(), 
             [](const city &a, const city &b) {return a.degree > b.degree ;}
 );
+```
+
+## 19. Substring in cpp
+```
+#include <string>
+/ Take any string
+    string s1 = "Geeks";
+
+// Copy two characters of s1 (starting
+// from position 3)
+string r = s1.substr(3, 2);
 ```
 
 
