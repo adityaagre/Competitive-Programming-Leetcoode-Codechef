@@ -89,7 +89,7 @@ There are these ways:
 https://docs.python.org/3.6/library/copy.html
 
 Assignment statements in Python do not copy objects, they create bindings between a target and an object. For collections that are mutable or contain mutable items, a copy is sometimes needed so one can change one copy without changing the other. This module provides generic shallow and deep copy operations (explained below).
-
+```
 copy.copy(x)
 Return a shallow copy of x.
 copy.deepcopy(x[, memo])
@@ -97,6 +97,7 @@ Return a deep copy of x.
 
 exception copy.error
 Raised for module specific errors.
+```
 
 If you're not familiar with the difference between Shallow and Deep Copy, read these docs. Basically, a Shallow Copy is a new outer container object (the [ ] and the internal elements are references to the same memory locations. A Deep Copy is also a new outer container but gets brand new copies of the objects inside (i.e. identical copies of the objects but at new memory locations).
 The difference between shallow and deep copying is only relevant for compound objects (objects that contain other objects, like lists or class instances):
