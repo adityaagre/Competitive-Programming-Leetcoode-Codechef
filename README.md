@@ -338,7 +338,8 @@ std::sort(vec.begin(),vec.end(), [](int &a, int &b){ return a>b; });
 ```
 
 ## String to int
-```string str1 = "45";
+```
+string str1 = "45";
   string str2 = "3.14159";
   char str3[] = "31337 geek";
  
@@ -349,10 +350,13 @@ std::sort(vec.begin(),vec.end(), [](int &a, int &b){ return a>b; });
   int myint2 = stoi(str2);
      
   // type of explicit type casting
-  int myint3 = stoi(str3);```
-```stoi("45") is 45
+  int myint3 = stoi(str3);
+```
+```
+stoi("45") is 45
 stoi("3.14159") is 3
-stoi("31337 geek") is 31337```
+stoi("31337 geek") is 31337
+```
 
 
 
