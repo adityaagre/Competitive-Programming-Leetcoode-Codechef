@@ -20,7 +20,8 @@
 18. Sorting based on a member of an object.
 19. Substring in cpp.
 20. Sorting vector
-21. string to int stoi
+21. String to Int stoi()
+22. Int to String  
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -356,6 +357,30 @@ string str1 = "45";
 stoi("45") is 45
 stoi("3.14159") is 3
 stoi("31337 geek") is 31337
+```
+
+## Int to String
+```
+string to_string (int val);
+```
+```
+ // Declaring integer
+    int i_val = 20;
+ 
+    // Declaring float
+    float f_val = 30.50;
+ 
+    // Conversion of int into string using
+    // to_string()
+    string stri = to_string(i_val);
+ 
+    // Conversion of float into string using
+    // to_string()
+    string strf = to_string(f_val);
+```
+```
+The integer in string is : 20
+The float in string is : 30.500000
 ```
 
 
