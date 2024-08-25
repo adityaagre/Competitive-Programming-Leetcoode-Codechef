@@ -23,6 +23,10 @@ public:
                     {
                         break;
                     }
+                    else if(intervals[i+ctr][0] > end)
+                    {
+                        break;
+                    }
                     if(intervals[i+ctr][0] <= end)
                     {
                         omit_list[i+ctr] = 1;
