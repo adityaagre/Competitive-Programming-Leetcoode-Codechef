@@ -8,17 +8,21 @@ public:
         {
             if (s[i] == 'E')
             {
-                current ++;
+                if(current == 0)
+                {
+                    max++;
+                }
+                else
+                {
+                    current--;
+                }
             }
             else
             {
-                current--;
+                current++;
             }
             
-            if(current > max)
-            {
-                max = current;
-            }
+            
         }
         return max;
     }
