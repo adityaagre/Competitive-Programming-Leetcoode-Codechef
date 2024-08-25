@@ -20,7 +20,7 @@
 18. Sorting based on a member of an object.
 19. Substring in cpp.
 20. Sorting vector
-21. 
+21. string to int stoi
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -336,6 +336,23 @@ std::sort(vec.begin(),vec.end(), greater<int>());
 //Sorting the vector using user-defined lambda expression(return type bool)
 std::sort(vec.begin(),vec.end(), [](int &a, int &b){ return a>b; });
 ```
+
+## String to int
+```string str1 = "45";
+  string str2 = "3.14159";
+  char str3[] = "31337 geek";
+ 
+  // type of explicit type casting
+  int myint1 = stoi(str1);
+   
+  // type of explicit type casting
+  int myint2 = stoi(str2);
+     
+  // type of explicit type casting
+  int myint3 = stoi(str3);```
+```stoi("45") is 45
+stoi("3.14159") is 3
+stoi("31337 geek") is 31337```
 
 
 
