@@ -14,19 +14,23 @@ public:
     int sum=0;
     int rangeSumBST(TreeNode* root, int low, int high)
     {
+        if(root)
+        {
         // cout<<root->val;
         if((root->val >= low)&&(root->val <= high))
         {
             sum += root->val;
         }
-        if((root->left)&&(root->val >= low))
+        if((root->val >= low))
         {
             rangeSumBST(root->left, low, high);
         }
-        if((root->right)&&(root->val <= high))
+        if((root->val <= high))
         {
             rangeSumBST(root->right, low, high);
         }
+        }
+
         return sum;
         
         
