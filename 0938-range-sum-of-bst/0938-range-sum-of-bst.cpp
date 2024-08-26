@@ -19,11 +19,11 @@ public:
         {
             sum += root->val;
         }
-        if(root->left)
+        if((root->left)&&(root->val >= low))
         {
             rangeSumBST(root->left, low, high);
         }
-        if(root->right)
+        if((root->right)&&(root->val <= high))
         {
             rangeSumBST(root->right, low, high);
         }
