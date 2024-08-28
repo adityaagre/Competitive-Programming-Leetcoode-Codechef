@@ -21,7 +21,8 @@
 19. Substring in cpp.
 20. Sorting vector
 21. String to Int stoi()
-22. Int to String  
+22. Int to String
+23. Diameter of a tree
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -382,6 +383,8 @@ string to_string (int val);
 The integer in string is : 20
 The float in string is : 30.500000
 ```
+## Diameter of a tree
+The diameter of a binary tree is the length of the longest path between any two nodes in a tree. ###This path may or may not pass through the root.
 
 
 
