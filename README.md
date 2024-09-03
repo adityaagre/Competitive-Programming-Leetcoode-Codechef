@@ -389,6 +389,7 @@ The diameter of a binary tree is the length of the longest path between any two 
 
 ## 0,1,2 Array Sort - Pubmatic Question - 3 pointer approach
 #### Pubmatic failed problem
+https://github.com/adityaagre/Competitive-Programming-Leetcoode-Codechef/tree/main/0075-sort-colors 
 Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
 We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
 You must solve this problem without using the library's sort function.
