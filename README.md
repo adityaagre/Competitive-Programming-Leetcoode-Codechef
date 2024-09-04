@@ -24,6 +24,7 @@
 22. Int to String
 23. Diameter of a tree
 24. 0,1,2 Array Sorting - Pubmatic Question | 3 pointer approach
+25. Airplane Seat Assignment Probability #### Not Intuitive
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
