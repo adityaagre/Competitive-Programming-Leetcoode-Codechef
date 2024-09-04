@@ -24,7 +24,7 @@
 22. Int to String
 23. Diameter of a tree
 24. 0,1,2 Array Sorting - Pubmatic Question | 3 pointer approach
-25. Airplane Seat Assignment Probability #### Not Intuitive
+25. Airplane Seat Assignment Probability ( Leetcode 1227 )
 
 ## 1. Sorting a nested vector based on one of its terms. ##
 Vector : [[5,7], [1,3], [8,9]]
@@ -427,6 +427,13 @@ public:
     }
 };
 ```
+
+## Airplane Seat Assignment Probability  
+Leetcode 1227
+#### Not Intuitive
+This is an important Probability problem which is not intuitive.
+https://github.com/adityaagre/Competitive-Programming-Leetcoode-Codechef/tree/main/1227-airplane-seat-assignment-probability
+Solution : https://youtu.be/Zt90QzEDLTc?si=MRrdcSqi0EXKGrSR
 
 
 
